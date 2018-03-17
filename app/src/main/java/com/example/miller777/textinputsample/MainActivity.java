@@ -36,11 +36,11 @@ public class MainActivity extends AppCompatActivity {
                 int etCorrLength = etCorrespondent.getText().toString().length();
                 tvCount.setText(String.valueOf(etCorrLength));
                 if (etCorrLength >= COUNT_LIMIT){
-//                    etCorrespondent.setText(etCorrespondent.getText().toString().substring(0, COUNT_LIMIT - 1));
-                    etCorrespondent.setEnabled(false);
+                    etCorrespondent.setText(etCorrespondent.getText().toString().substring(0, COUNT_LIMIT));
+//                    etCorrespondent.setEnabled(false);
                     showMessage();
                 } else {
-                    etCorrespondent.setEnabled(true);
+//                    etCorrespondent.setEnabled(true);
                 }
             }
 
